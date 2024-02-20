@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicode Detector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container box px-5">
+            <div class="container">
+                <h1 class="is-size-5 has-text-weight-bold">Unicode Detector</h1>
+                <p class="is-size-5 has-text-grey">Use our unicode detector to identify non-standard characters that can
+                    increase the cost
+                    of your SMS messages.</p>
+                <hr>
+
+                <div>
+                    <p class="has-text-weight-bold">SMS Message</p>
+                    <textarea name="" id="inputText" cols="30" class="textarea is-info mt-3"></textarea>
+                </div>
+
+                <div class="is-flex my-2">
+
+                    <p class="has-text-weight-bold mt-3">SMS Length
+                        <span class="has-text-weight-semibold has-text-success mx-2">0/120</span>
+                    </p>
+                    <div>
+
+                        <p style="border-radius: 5px;"
+                            class="has-background-grey-lighter mt-1 p-2 has-text-success has-text-weight-semibold">
+                            1
+                            Text
+                            Message</p>
+
+                    </div>
+
+                </div>
+
+                <div>
+                    <p class="has-text-weight-bold mt-3">Message Characters</p>
+                    <div id="output" class="box mt-4"></div>
+                </div>
+
+                <p class="mt-5">Key</p>
+                <div class="buttons mt-3">
+                    <div class="is-flex is-align-items-center">
+                        <button class="button mt-2" style="background-color: #f3f4f6;"></button>
+                        <p class="has-text-weight-bold mx-2">GSM Characters</p>
+                    </div>
+                    <div class="is-flex is-align-items-center">
+                        <button class="button mt-2" style="background-color: #eab308;"></button>
+                        <p class="has-text-weight-bold mx-2">Extended GSM Characters</p>
+                    </div>
+                    <div class="is-flex is-align-items-center">
+                        <button class="button mt-2" style="background-color: #7f1d1d;"></button>
+                        <p class="has-text-weight-bold mx-2">Unicode Character</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
